@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-
+    Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap css contents -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "poppins", sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: cadetblue;
+      }
+
+      .hero {
+        margin-top: 5px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: #0952f1;
+      }
+      form {
+        width: 90%;
+        max-width: 600px;
+      }
+
+      .input-group {
+        margin-bottom: 30px;
+        position: relative;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        outline: 0;
+        font-family: "Times New Roman", Times, serif;
+        border: 1px solid #0952f1;
+        color: #fff;
+        background: transparent;
+        font-size: 15px;
+        border-radius: 30px;
+      }
+
+      label {
+        height: 100%;
+        position: absolute;
+        font-family: "Times New Roman", Times, serif;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        color: #f8f5f5;
+        cursor: text;
+        transition: 0.2s;
+      }
+
+      button {
+        padding: 10px 0;
+        color: rgb(245, 245, 248);
+        background-color: #ff6347;
+        font-size: 21px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        outline: none;
+        border: 1px solid #d3d6d8;
+        width: 25%;
+        margin-left: 73%;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: 0.3s ease;
+      }
+
+      button:hover {
+        background-color: rgb(1, 109, 250);
+        transform: scale(1.1);
+      }
+      input:focus ~ label,
+      input:valid ~ label,
+      textarea:focus ~ label,
+      textarea:valid ~ label {
+        top: -35px;
+        font-size: 14px;
+      }
+      /* .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      h1 {
+        text-align: center;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="nav nav-pills" style="margin-top: 5px">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            href="index.html"
+            style="border-radius: 20px; border: 2px solid; margin-right: 5px"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            style="color: white; border-radius: 20px; border: 2px solid"
+            >Profiles</a
+          >
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="john.html">John Abraham</a>
+            <a class="dropdown-item" href="jeff.html">Jeff Bezos</a>
+            <a class="dropdown-item" href="bill.html">Bill Gates</a>
+            <a class="dropdown-item" href="mukesh.html">Mukesh Ambani</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" style="color: white"
+            >About us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" style="color: white"
+            >Contact us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="hero">
+      <form>
+        <h1 style="color: #ff4500">Contact Us Page</h1>
+        <p>
+          A Contact Us page is essential to building a brand’s website as it
+          allows visitors to contact you easily without leaving their browser.
+        </p>
+        <br />
+        <div class="input-group">
+          <input type="text" id="name" required />
+          <label for="name"
+            ><i class="fa-solid fa-user"></i> Enter Your Name</label
+          >
+        </div>
+        <div class="input-group">
+          <input type="text" id="number" required />
+          <label for="number"
+            ><i class="fa-solid fa-mobile"></i> Enter Your Mobile Number</label
+          >
+        </div>
+        <div class="input-group">
+          <input type="text" id="email" required />
+          <label for="email"
+            ><i class="fa-solid fa-envelope"></i> Enter Your Email id</label
+          >
+        </div>
+        <div class="input-group">
+          <textarea id="message" rows="8" required></textarea>
+          <label for="message"
+            ><i class="fa-solid fa-comments"></i> Your Message</label
+          >
+        </div>
+        <button class="submit">
+          Submit <i class="fa-regular fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-
+        KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-
+        ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-
+        JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
